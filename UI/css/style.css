@@ -36,6 +36,14 @@ ul{
 	margin: 0;
 }
 
+#user-type a {
+	color: #EEEEEE;
+}
+
+#user-type .current a{
+	color: #33691E;
+}
+
 header li{
 	display: inline;
 	float: left;
