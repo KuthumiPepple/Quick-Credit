@@ -2,24 +2,26 @@ body{
 	font: 15px/1.5 Georgia, "Gill sans", san-serif;
 	padding: 0;
 	margin: 0;
+	min-height: 100%;
 }
 
 .container{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
-	text-align: center;
+	
 }
 
 .bg-image{
-	min-height: 700px;
-	background: url(../img/coins.jpg);
+	min-height: 70%;
+	background-image: url(../img/coins.jpg);
+	background-size: 100% 100%; 
 	border-bottom: #33691E 2px solid;
 }
 
 header{
 	color: #33691E;
-	min-height: 60px;
+	min-height: 20%;
 	padding-top: 24px;
 	border-bottom: #33691E 2px solid;
 	background: #EEEEEE;
@@ -31,7 +33,7 @@ header a{
 	font-size: 16px;
 }
 
-ul{
+nav > ul, .container > ul{
 	padding: 0;
 	margin: 0;
 }
@@ -44,9 +46,33 @@ ul{
 	color: #33691E;
 }
 
+aside{
+background-color: #33691E;
+float: right;
+color: #EEEEEE;
+width: 20%;
+border: #EEEEEE solid 2px;
+overflow: auto;
+padding: 1em 1em 1em 1em;
+margin-right: 5%;
+border-radius: 10%;
+box-shadow: 4px 5px black;
+}
+
+form > p{
+	background-color: #33691E;
+	width: 50%;
+	border: 1px solid black;
+	margin-left: 5px;
+	padding: 1em;
+}
+
+span{
+	font: 1.5em/1.5 Georgia, "Gill sans", san-serif;
+}
+
 header li{
 	display: inline;
-	float: left;
 	padding: 0 20px 0 20px;
 }
 
@@ -72,7 +98,7 @@ header .current{
 	color: #EEEEEE;
 }
 
-header a:hover{
+header a:hover, form > p{
 	font-weight: bold;
 }
 
@@ -81,6 +107,11 @@ footer{
 	text-align: center;
 	overflow: hidden;
 	color: #33691E;
+	min-height: 10%;
+}
+
+form{
+	padding-bottom: 100px;
 }
 
 .container input{
@@ -89,13 +120,11 @@ footer{
 	margin: 5px;
 	height: 20px;
 	border: #33691E 3px solid;
-}
-
-.container form{
-	margin-top: 120px;
+	box-shadow: 4px 5px;
 }
 
 .button_1{
+	margin: 10px 5px;
 	width: 70px;
 	height: 30px;
 	color: #33691E;
@@ -113,7 +142,10 @@ footer{
 	header #lettering, header nav,
 	header nav li{
 		float: none;
-		width: 100%;
+		display: inline;
 		text-align: center;
+	}
+	aside{
+		width: 50%;
 	}
 }
