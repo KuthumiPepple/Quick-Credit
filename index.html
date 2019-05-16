@@ -8,7 +8,6 @@
 	<meta name="description" content="Online lending platform that provides short term soft loans 	to individuals">
 	<meta name="keywords" content="online lending, short term loans, soft loans">
 	<meta name="author" content="Kuthumi Pepple">
-
 </head>
 <body>
 <header>
@@ -18,29 +17,53 @@
 		</div>
 		<nav>
 			<ul>
-				<li class="current"><a href="index.html">Sign in</a></li>
-				<li><a href="sign_up.html">Sign up</a></li>
+				<li id="sign-in-container" class="current"><a id="sign-in" href="#">Sign in</a></li>
+				<li id="sign-up-container"><a id="sign-up" href="#">Sign up</a></li>
 			</ul>
 		</nav>
 	</div>
 </header>
-
 <div class="bg-image">
 	<section id="user-type">
 		<div class="container">
 			<ul>
-				<li class="current"><a href="index.html">User</a></li>
-				<li><a href="admin_login.html">Admin</a></li>
+				<li id="user-container" class="current"><a href="#" id="user">User</a></li>
+				<li id="admin-container"><a href="#" id="admin">Admin</a></li>
 			</ul>
 		</div>
 	</section>
+	<aside>
+		<span>Quick Credit</span> provides you with short term loans within moments of requesting.</br>
+		Advantages of using Quick Credit:
+		<ul>
+			<li>no collateral needed</li>
+			<li>very low interest rate</li>
+			<li>flexible repayment plan</li>
+		</ul>
+	</aside>
 	<section id="login-form">
 		<div class="container">
-			<form>
+			<form id="sign-in-form">
+				<p>Login into your account. If you are new here, you can sign up to create an account.</p>
 				<input type="text" placeholder="Username"><br>
 				<input type="text" placeholder="Password" minlength="4"><br>
 				<button class="button_1" type="submit">Login</button>
-
+			</form>
+			<form id="sign-up-form">
+				<p>Provide us with the following information to create your account.</p>
+				<input type="text" placeholder="first name" required><br>
+				<input type="text" placeholder="last name" required><br>
+				<input type="text" placeholder="street address" required><br>
+				<input type="email" placeholder="email" required><br>
+				<input type="text" id="password" placeholder="password" minlength="4" required><br>
+				<input type="text" id="confirm" placeholder="confirm password" minlength="4" required><br>
+				<button class="button_1" type="submit">Sign up</button>
+			</form>
+			<form id="admin-form">
+				<p>Enter Admin username and password.</p>
+				<input type="text" placeholder="Admin username"><br>
+				<input type="text" placeholder="Admin password" minlength="4"><br>
+				<button class="button_1" type="submit">Login</button>
 			</form>
 		</div>
 	</section>
@@ -48,5 +71,6 @@
 <footer>
 	<p>Quick Credit, Copyright &copy; 2019</p>
 </footer>
+<script src="js/index.js"></script>
 </body>
 </html>
